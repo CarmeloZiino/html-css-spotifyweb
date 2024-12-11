@@ -6,8 +6,13 @@
     <title>Html Css SpotifyWeb</title>
 
     <!-- Link Icone Esterne Font Awesome -->
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Link Debug Css esterno -->
     <link rel="stylesheet" href="css/debug.css">
 
@@ -17,8 +22,9 @@
     <!-- Link Style Css esterno --> 
     <link rel="stylesheet" href="css/style.css">
 
-    
+    <!-- Link esterno Css Responsive -->
 
+    <link rel="stylesheet" href="css/responsive.css">
 
 
 </head>
@@ -26,109 +32,104 @@
     <main>
 
 
-<section class="first-box">
+        <section class="first-box">
 
-    <div class="sidebar">
+            <div class="sidebar">
 
-        <figure class="icon-top">
-            <img src="./spotify/img/logo-small.svg" alt="logo">
-            <img src="./spotify/img/home.svg" alt="home">
-            <img src="./spotify/img/search.svg" alt="search">
-            <img src="./spotify/img/libreria.svg" alt="libreria">
-        </figure>
-        
-        <ul class="playlist">
-         <li><strong>Nuova Playlist</strong></li>
-         <li>Nuova Playlist</li>
-         <li>Nuova Playlist</li>
-         <li>Nuova Playlist</li>
-         <li>Nuova Playlist</li>
-         <li>Nuova Playlist</li>
-         <li>Nuova Playlist</li>
-      </ul>
-        
-    <figure class="icon-down">
-        <img  src="./spotify/img/download.svg" alt="">
-        <img   src="./spotify/img/profile.svg" alt="profile">
-    </figure>
-  </div>
-        
-    </div>
-
-    <div class="box-right"></div>
-
-
-</section>
-
-
-<section class="second-box">
-
-    <nav>
-        <button>EFFETTUA L'UPGRADE</button>
-    </nav>
-    
-    
-    <div class="music-box">
-        <div class="category">
-            <h4>IN EVIDENZA</h4>
-            <h4>PODCAST</h4>
-            <h4>CLASSIFICHE</h4>
-            <h4>GENERI E MOOD</h4>
-            <h4>NUOVE USCITE</h4>
-            <h4>SCOPRI</h4>
+                <figure class="icon-top">
+                    <img src="./spotify/img/logo-small.svg" alt="logo">
+                    <img src="./spotify/img/home.svg" alt="home">
+                    <img src="./spotify/img/search.svg" alt="search">
+                    <img src="./spotify/img/libreria.svg" alt="libreria">
+                </figure>
+                
+                <ul class="playlist">
+                <li><strong>Nuova Playlist</strong></li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+                <li>Nuova Playlist</li>
+            </ul>
+                
+            <figure class="icon-down">
+                <img src="./spotify/img/download.svg" alt="">
+                <img src="./spotify/img/profile.svg" alt="profile">
+            </figure>
         </div>
-    
-        <h4 id="title-section">Recently played</h4>
-        
-        <div class="music-row">
-    
-            <div class="card">
-                <img src="./spotify/img/metal_lifting.jpg" alt="MUSIC IMG">
-                    
-                <h5 class="title">Heavy Metal</h5>
-                <h5 class="subtitle">Subtitle</h5>
+                
             </div>
 
-
-            <div class="card">
-                <img src="./spotify/img/stranger.jpeg" alt="MUSIC IMG">
-                <h5 class="title">Stranger hings, Vol. 1 (a Netflix Originale Series Soundtrack)</h5>
-                <h5 class="subtitle">Kyle Dixon & Michael Stein</h5>
-             </div>
-
-            <div class="card">
-               <img src="./spotify/img/aquietplace.jpeg" alt="MUSIC IMG">
-               <h5 class="title">A quiet place</h5>
-               <h5 class="subtitle">Subtitle</h5>
-            </div>
+            <div class="box-right"></div>
 
 
-            <div class="card">
-                <img src="./spotify/img/split.jpeg" alt="MUSIC IMG">
-              <h5 class="title">Split</h5>
-              <h5 class="subtitle">Subtitle</h5>
-            </div>
+        </section>
 
 
-            <div class="card">
-                <img src="./spotify/img/cure.jpeg" alt="MUSIC IMG">
-                <h5 class="title">A cure for wellness</h5>
-                <h5 class="subtitle">Subtitle</h5>
-            </div>
+        <section class="second-box">
 
+            <nav>
+                <button>EFFETTUA L'UPGRADE</button>
+            </nav>
+            
+            
+            <div class="music-box">
+                <div class="category">
+                    <h4>IN EVIDENZA</h4>
+                    <h4>PODCAST</h4>
+                    <h4>CLASSIFICHE</h4>
+                    <h4>GENERI E MOOD</h4>
+                    <h4>NUOVE USCITE</h4>
+                    <h4>SCOPRI</h4>
+                </div>
+            
+                <h4 id="title-section">Recently played</h4>
+                
+                <div class="music-row">
+            
+                    <div class="card">
+                        <img src="./spotify/img/metal_lifting.jpg" alt="MUSIC IMG">
+                            
+                        <h5 class="title">Heavy Metal</h5>
+                        <h5 class="subtitle">Subtitle</h5>
+                    </div>
 
-            <div class="card">
-                <img src="./spotify/img/sinister.jpeg" alt="MUSIC IMG">
-                <h class="title"5>Sinister</h>
-                <h5 class="subtitle">Subtitle</h5>
-            </div>
+                    <div class="card">
+                        <img src="./spotify/img/stranger.jpeg" alt="MUSIC IMG">
+                        <h5 class="title">Stranger hings, Vol. 1 (a Netflix Originale Series Soundtrack)</h5>
+                        <h5 class="subtitle">Kyle Dixon & Michael Stein</h5>
+                    </div>
 
+                    <div class="card">
+                    <img src="./spotify/img/aquietplace.jpeg" alt="MUSIC IMG">
+                    <h5 class="title">A quiet place</h5>
+                    <h5 class="subtitle">Subtitle</h5>
+                    </div>
 
+                    <div class="card">
+                        <img src="./spotify/img/split.jpeg" alt="MUSIC IMG">
+                    <h5 class="title">Split</h5>
+                    <h5 class="subtitle">Subtitle</h5>
+                    </div>
+
+                    <div class="card">
+                        <img src="./spotify/img/cure.jpeg" alt="MUSIC IMG">
+                        <h5 class="title">A cure for wellness</h5>
+                        <h5 class="subtitle">Subtitle</h5>
+                    </div>
+
+                    <div class="card">
+                        <img src="./spotify/img/sinister.jpeg" alt="MUSIC IMG">
+                        <h class="title"5>Sinister</h>
+                        <h5 class="subtitle">Subtitle</h5>
+                    </div>
+
+                </div>
         </div>
-</div>
 
 
-</section>
+        </section>
 
 
 
@@ -136,5 +137,71 @@
 
 
     </main>
+
+    <aside>
+        <!-- Parte Sinistra -->
+        <div class="utilities">
+            <div class="music-info">
+                <img src="./spotify/img/sinister.jpeg" alt="MUSIC IMG">
+                <article>
+                    <h5>Sinister</h5>
+                    <h6>Brano Nome</h6>
+                </article>
+            </div>
+
+            <div class="icon-left">
+                    <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+        </div>
+
+       <!-- Parte Centrale -->
+        <div class="player">
+
+            <div class="player-top icon">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>
+
+
+            <div class="player-bottom">
+                <div class="text-player">
+                    0:25
+                </div>
+
+                <div class="container-song-bar">
+                    <div class="song-bar"></div>
+                </div>
+
+                <div class="text-player">
+                    4:35
+                </div>
+
+            </div>
+
+
+      
+
+
+        </div>
+
+        <!-- Parte Destra -->
+        <div class="utilities-right">
+
+            <div class="icon-right">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+            </div>
+
+            <div class="container-sound-bar">
+                <div class="sound-bar"></div>
+            </div>
+       </div>
+
+    </aside>
 </body>
 </html>

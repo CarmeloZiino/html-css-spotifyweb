@@ -4,6 +4,7 @@
 
 body {
   background-color: #141922;
+  height: 100vh;
 }
 
 main {
@@ -12,9 +13,10 @@ main {
 
 /***** BOX LATERALE CON LOGO - ICONE - PLAYLIST *****/
 .first-box {
-  width: 10vw;
+  width: 15vw;
   padding: 10px;
   background-color: black;
+
 }
 
 .sidebar figure {
@@ -32,10 +34,19 @@ main {
   display: none;
 }
 
-.icon-down {
+.sidebar {
+  height: 88vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  left: 1vh;
+
 }
+
+
+
+
 
 /***** BOX CENTRALE *****/
 
@@ -43,6 +54,8 @@ main {
   display: flex;
   justify-content: right;
   align-items: center;
+  position: sticky;
+  top: 0;
 
   height: 10vh;
   padding: 0px;
@@ -54,13 +67,9 @@ main {
   border: 1px solid white;
   background-color: #090b12;
   font-size: 0.5rem;
-  padding: 2px 20px;
+  padding: 2px 10px;
   border-radius: 20px;
-  height: 50%;
-}
-
-.second-box {
-  width: 90vw;
+  height: 5vh;
 }
 
 .music-box .category {
@@ -78,16 +87,16 @@ main {
   font-family: sans-serif;
 }
 
-#title-section{
-padding-left: 10px;
-font-family: sans-serif;
+#title-section {
+  padding-left: 10px;
+  font-family: sans-serif;
 }
 /***** MUSIC BOX *****/
 
-.music-box{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.music-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 /***** ROW CARD *****/
@@ -111,16 +120,145 @@ font-family: sans-serif;
   flex-shrink: 1;
 }
 
-.card img{
-    width: 100%;
+.card img {
+  width: 100%;
 }
 
-.card>h5{
-    font-family: sans-serif;
-    font-size: 0.4rem;
-    text-align: center;
+.card > h5 {
+  font-family: sans-serif;
+  font-size: 0.4rem;
+  text-align: center;
 }
 
 .card .subtitle {
-    color: #7a7c80;}
+  color: #7a7c80;
+}
 
+/***** MUSIC PLAYER *****/
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: #282828;
+  gap: 10px;
+  width: 100%;
+  padding: 5px;
+  
+}
+
+/***** MUSIC PLAYER - Parte Sinistra *****/
+.utilities {
+  flex-basis: 25%;
+}
+
+.utilities,
+.utilities > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.utilities > div img {
+  width: 8vw;
+}
+
+.utilities > div article {
+  font-family: sans-serif;
+  font-size: 0.5rem;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  gap: 10px;
+}
+
+.icon-left {
+  font-size: 0.4rem;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/***** MUSIC PLAYER - Parte Centrale *****/
+
+.player {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 40%;
+}
+
+.player-top.icon {
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-player {
+  font-size: 0.45rem;
+  font-family: sans-serif;
+}
+
+.container-song-bar {
+  height: 2px;
+  background-color: gray;
+  width: 70%;
+  border-radius: 15px;
+}
+
+.song-bar {
+  height: 2px;
+  background-color: #c1c1c1;
+  width: 40%;
+  border-radius: 15px;
+}
+
+/***** MUSIC PLAYER - Parte Destra *****/
+
+.utilities-right {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  flex-basis: 30%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-right {
+  display: flex;
+  gap: 5px;
+  font-size: 0.5rem;
+}
+
+.container-sound-bar {
+  height: 2px;
+  background-color: gray;
+  width: 50%;
+  border-radius: 15px;
+}
+
+.sound-bar {
+  height: 2px;
+  background-color: #c1c1c1;
+  width: 40%;
+  border-radius: 15px;
+}
