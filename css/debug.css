@@ -1,17 +1,7 @@
-/* * {
-    outline: 5px dashed rgba(255, 0, 0, 0.2); /* Linea sottile per tutti gli elementi */
+* {
+    border: 1px solid red;
 }
 
-/* Background-color per visionare i blocchi */
-/* header{
-    background-color: #265EE9;
+div {
+    border: 1px solid blue;
 }
-main{
-
-    
-}
-
-.container-main-1 , 
-.container-main-3 {
-    background-color: rgb(242, 247, 134);
-} */ */

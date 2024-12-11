@@ -1,0 +1,41 @@
+*{
+    color: white;
+}
+
+body {
+    background-color: #141922;
+}
+
+main {
+    display: flex;
+}
+
+/***** BOX LATERALE CON LOGO - ICONE - PLAYLIST *****/
+.first-box{
+width: 15vw;
+height: 85vh;
+padding: 10px;
+background-color: black;
+
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.sidebar img{
+    width: 10vw;
+}
+
+.sidebar .playlist{
+    display: none;
+}
+
+
+/***** BOX CENTRALE *****/
+
+
+.second-box
