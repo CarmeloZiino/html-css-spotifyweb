@@ -20,7 +20,6 @@ body {
 main {
   display: flex;
   height: 90vh;
-  overflow: auto;
 }
 
 /***** BOX LATERALE CON LOGO - ICONE - PLAYLIST *****/
@@ -130,7 +129,11 @@ hr {
 
 .second-box {
   flex-basis: 65%;
+  overflow: auto;
+
 }
+
+/*** Bottoni Music Box ***/
 
 .second-box nav {
   display: flex;
@@ -169,9 +172,24 @@ hr {
   font-family: sans-serif;
 }
 
-#title-section {
+/*** Titoli Sezioni Music Box ***/
+.section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title-section {
   padding-left: 10px;
   font-family: sans-serif;
+  font-size: 2rem;
+}
+
+.subtitle-section {
+  padding-left: 10px;
+  font-family: sans-serif;
+  font-size: 0.7rem;
+  color: var(--text);
 }
 /***** MUSIC BOX *****/
 
@@ -183,7 +201,7 @@ hr {
 
 /***** ROW CARD *****/
 
-.music-row {
+.music-row , .music-row-nd , .music-row-rd {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -196,9 +214,10 @@ hr {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
-  flex-basis: calc(100% / 2 - 20px);
+  gap: 15px;
+  flex-basis: calc(100% / 2 - 30px);
   flex-shrink: 1;
+  height: 100%;
 }
 
 .card img {
@@ -207,12 +226,16 @@ hr {
 
 .card > h5 {
   font-family: sans-serif;
-  font-size: 0.4rem;
+  font-size: 0.7rem;
   text-align: center;
 }
 
 .card .subtitle {
   color: var(--text);
+}
+
+.music-row-rd .card>img {
+  border-radius: 100px;
 }
 
 /***** MUSIC PLAYER *****/
