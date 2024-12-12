@@ -1,0 +1,119 @@
+/***** RESPONSIVE MOBILE (XS) - MAX-WIDTH 479PX *****/
+@media screen and (max-width: 479px) {
+  .sidebar-logo > img[alt$="big"] {
+    display: none;
+  }
+  .sidebar-logo > img[alt$="small"] {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .icon-top > li img {
+    width: 100%;
+  }
+
+  .icon-down > a img {
+    width: 100%;
+  }
+
+  .icon-top > li > span {
+    display: none;
+  }
+
+  .sidebar .playlist {
+    display: none;
+  }
+
+  .icon-down > a > span {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+
+  .first-box {
+    flex-basis: 10%;
+    padding: 8px;
+  }
+  .second-box {
+    flex-basis: 90%;
+  }
+
+  .title-section {
+    font-size: 1.2rem;
+  }
+
+  .music-box .category {
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    height: 15vh;
+  }
+  .category > h4 {
+    font-size: 0.5rem;
+  }
+
+  .music-box{
+    gap: 20px;
+  }
+
+  .card > h5{
+    font-size: 0.5rem;
+  }
+}
+
+/***** RESPONSIVE TABLET (MD) - MIN-WIDTH 768PX *****/
+
+@media screen and (min-width: 768px) {
+    
+
+  .first-box {
+    flex-basis: 20%;
+  }
+
+  .second-box {
+    flex-basis: 80%;
+  }
+
+  .music-row,
+  .music-row-nd,
+  .music-row-rd {
+    margin: 10px;
+    justify-content: left;
+  }
+
+  .card {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+
+  .playlist li {
+    font-size: 0.7rem;
+  }
+}
+
+/***** RESPONSIVE DEXTOP (LG- MIN-WIDTH 1024PX *****/
+
+@media screen and (min-width: 1024px) {
+  .first-box {
+    flex-basis: 20%;
+  }
+
+  .second-box {
+    flex-basis: 80%;
+  }
+
+  .music-row,
+  .music-row-nd,
+  .music-row-rd {
+    margin: 10px;
+    justify-content: left;
+  }
+
+  .card {
+    flex-basis: calc(100% / 6 - 30px);
+  }
+
+  .utilities > div img {
+    width: 5vw;
+  }
+}
