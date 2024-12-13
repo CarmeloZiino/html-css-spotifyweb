@@ -239,21 +239,22 @@ hr {
 
 aside {
   height: 10vh;
+  width: 100%;
+
   display: flex;
   justify-content: center;
   align-items: center;
+  
   position: fixed;
   bottom: 0;
   background-color: var(--footer);
-  gap: 10px;
-  width: 100%;
-  padding: 5px;
+  gap: 5px;
+
 }
 
 /***** MUSIC PLAYER - Parte Sinistra *****/
 .utilities {
-  flex-basis: 25%;
-}
+  flex-basis: 30%;}
 
 .utilities,
 .utilities > div {
@@ -280,7 +281,7 @@ aside {
 }
 
 .icon-left {
-  font-size: 0.4rem;
+  font-size: 0.6rem;
   gap: 10px;
   display: flex;
   flex-direction: column;
