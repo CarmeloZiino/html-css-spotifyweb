@@ -25,7 +25,6 @@ main {
 /***** BOX LATERALE CON LOGO - ICONE - PLAYLIST *****/
 .first-box {
   flex-basis: 35%;
-  padding: 15px;
   background-color: black;
 
   display: flex;
@@ -38,7 +37,7 @@ main {
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 /*** SIDEBAR Icone in alto***/
@@ -70,7 +69,7 @@ li > span {
 }
 
 .icon-top {
-  border-left: var(--text-signed);
+  padding: 15px;
 }
 
 /*** SIDEBAR Playlist***/
@@ -79,6 +78,8 @@ li > span {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  padding: 15px;
 }
 
 .playlist > li > i {
@@ -99,6 +100,8 @@ li > span {
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  margin: 15px;
 }
 
 .icon-down a {
@@ -169,10 +172,19 @@ hr {
   padding: 0px 5px;
   color: var(--text);
   font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 > hr {
+  border: 1px solid var(--text-signed);
+  width: 60%;
 }
 
 /*** Titoli Sezioni Music Box ***/
-.section{
+.section {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -200,7 +212,9 @@ hr {
 
 /***** ROW CARD *****/
 
-.music-row , .music-row-nd , .music-row-rd {
+.music-row,
+.music-row-nd,
+.music-row-rd {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
@@ -221,6 +235,19 @@ hr {
   width: 100%;
 }
 
+.card > figure {
+  position: relative;
+  width: 100%;
+}
+
+.card > figure > i {
+  font-size: 3rem;
+  position: absolute;
+  left: 35%;
+  top: 25%;
+display: none;
+}
+
 .card > h5 {
   font-family: sans-serif;
   font-size: 0.7rem;
@@ -231,7 +258,7 @@ hr {
   color: var(--text);
 }
 
-.music-row-rd .card>img {
+.music-row-rd .card > img {
   border-radius: 100px;
 }
 
@@ -244,17 +271,17 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   position: fixed;
   bottom: 0;
   background-color: var(--footer);
   gap: 5px;
-
 }
 
 /***** MUSIC PLAYER - Parte Sinistra *****/
 .utilities {
-  flex-basis: 30%;}
+  flex-basis: 30%;
+}
 
 .utilities,
 .utilities > div {
@@ -364,3 +391,30 @@ aside {
   width: 40%;
   border-radius: 15px;
 }
+
+/***** HOVER *****/
+
+.icon-top li:hover {
+  border-left: 2px solid var(--text-signed);
+}
+
+.icon-top li > span:hover {
+  color: white;
+}
+
+.category > h4:hover {
+  color: white;
+}
+
+.icon-down a > span:hover {
+  color: white;
+}
+
+.playlist > li:hover {
+  color: white;
+}
+
+i:hover {
+display: inline-block;
+}
+
